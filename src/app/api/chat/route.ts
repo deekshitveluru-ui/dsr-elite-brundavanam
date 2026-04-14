@@ -9,7 +9,7 @@ export async function POST(req: Request) {
 
     // TODO: REPLACE THIS BLOCK WITH ACTUAL LLM SDK CALL (OpenAI / Google Gemini)
     // Example: const completion = await openai.chat.completions.create({ messages: [{role: "system", content: SYSTEM_PROMPT}, ...messages] });
-    
+
     // Simulate API Network Delay for UI loading state visibility
     await new Promise((resolve) => setTimeout(resolve, 1500));
 
@@ -17,7 +17,7 @@ export async function POST(req: Request) {
     let mockResponse = "Welcome to DSR Elite Brundavanam. As your digital concierge, how may I assist you with our luxury plotting or amenities today? Should you require direct assistance, please contact info.dsrelite@gmail.com or +91 9112230234.";
     const query = lastUserMessage.toLowerCase();
 
-    if (query.includes("kia") || query.includes("airport") || query.includes("hindupur")) {
+    if (query.includes("kia") || query.includes("airport") || query.includes("hindupur") || query.includes("location")) {
       mockResponse = "DSR Elite Brundavanam is strategically located directly on the NH-44 Expressway. We are just 30 minutes from KIA Motors India, 1.5 hours from the Hindupur Industrial Zone, and approximately 3 hours from Kempegowda International Airport (BLR).";
     } else if (query.includes("amenities") || query.includes("pool") || query.includes("goshala")) {
       mockResponse = "Our township boasts world-class amenities including a premium clubhouse, infinity pool, an exciting wave pool and zipline for recreation, and a dedicated Goshala. Furthermore, we are situated near 100 acres of preserved natural forest.";
@@ -25,15 +25,15 @@ export async function POST(req: Request) {
       mockResponse = "We offer 100% Vastu-compliant open plots and luxury villa plots within an official AHUDA-approved layout, ensuring the highest standards of planning and infrastructure.";
     }
 
-    return NextResponse.json({ 
-      role: 'assistant', 
-      content: mockResponse 
+    return NextResponse.json({
+      role: 'assistant',
+      content: mockResponse
     });
 
   } catch (error) {
     console.error("Chat API Error:", error);
     return NextResponse.json(
-      { error: "Internal Server Error" }, 
+      { error: "Internal Server Error" },
       { status: 500 }
     );
   }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import { Maximize, Map, Navigation, Compass } from "lucide-react";
 
@@ -10,6 +10,17 @@ export default function MasterPlanMap() {
   const [numPages, setNumPages] = useState<number>(0);
   const [pageNumber, setPageNumber] = useState<number>(7); // Default to core layout
   const [isFullscreen, setIsFullscreen] = useState(false);
+
+  useEffect(() => {
+    if (isFullscreen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isFullscreen]);
 
   function onDocumentLoadSuccess({ numPages }: { numPages: number }) {
     setNumPages(numPages);
@@ -23,8 +34,8 @@ export default function MasterPlanMap() {
   ];
 
   return (
-    <section className="py-24 bg-dsr-base relative z-10 overflow-hidden" id="master-plan">
-      <div className={`${isFullscreen ? 'fixed inset-0 z-50 bg-dsr-dark flex flex-col' : 'max-w-7xl mx-auto px-4 relative z-10'}`}>
+    <section className="py-24 bg-dsr-base relative z-0 overflow-hidden" id="master-plan">
+      <div className={`${isFullscreen ? 'fixed inset-0 z-[9999] bg-dsr-dark flex flex-col pt-20' : 'max-w-7xl mx-auto px-4 relative z-10'}`}>
 
         {!isFullscreen && (
           <div className="text-center mb-12">

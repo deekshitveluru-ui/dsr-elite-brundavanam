@@ -16,7 +16,7 @@ export default function ConnectivityHUD() {
   const progressPercent = Math.max(10, Math.min(100, (numericDistance / maxDistance) * 100));
 
   return (
-    <section className="py-24 bg-dsr-base relative overflow-hidden" id="connectivity-hud">
+    <section className="py-24 md:py-32 bg-dsr-base relative overflow-hidden flex items-center justify-center border-b border-gray-200" id="connectivity-hud">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
         <div className="text-center mb-16">
@@ -25,7 +25,7 @@ export default function ConnectivityHUD() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-4xl md:text-5xl font-serif text-dsr-dark mb-4"
+            className="text-3xl md:text-5xl lg:text-7xl font-serif text-dsr-dark mb-4"
           >
             Strategic <span className="text-dsr-gold">Connectivity</span>
           </motion.h2>
@@ -88,7 +88,7 @@ export default function ConnectivityHUD() {
                 {/* Header Metrics */}
                 <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-8">
                   <div>
-                    <span className="text-dsr-gold uppercase tracking-[0.3em] text-xs font-bold mb-3 flex items-center gap-2">
+                    <span className="text-dsr-gold uppercase tracking-[0.2em] text-xs font-bold mb-3 flex items-center gap-2">
                       <Navigation className="w-3 h-3" /> {activeData.status}
                     </span>
                     <h3 className="text-3xl md:text-5xl font-serif text-dsr-base leading-tight max-w-lg shadow-sm">

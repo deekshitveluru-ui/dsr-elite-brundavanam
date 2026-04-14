@@ -18,7 +18,7 @@ export default function HeroVideo() {
   }, []);
 
   return (
-    <section className="relative w-full h-screen min-h-[600px] flex items-center justify-center bg-dsr-dark overflow-hidden">
+    <section className="relative w-full h-[100dvh] min-h-[600px] flex items-center justify-center bg-dsr-dark overflow-hidden">
 
       {/* Absolute Video Element Configuration */}
       <video
@@ -35,17 +35,17 @@ export default function HeroVideo() {
       <div className="absolute inset-0 bg-gradient-to-b from-dsr-dark/60 via-dsr-dark/40 to-dsr-dark/90 z-10" />
 
       {/* Hero Typography Payload */}
-      <div className="relative z-20 px-6 text-center">
+      <div className="relative z-20 px-6 text-center w-full max-w-[90vw]">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
           className="flex flex-col items-center gap-6"
         >
-          <span className="text-dsr-gold uppercase tracking-[0.3em] font-medium text-sm md:text-base">
+          <span className="text-dsr-gold uppercase tracking-[0.2em] font-medium text-sm md:text-base">
             Stillness. Freedom. Connection.
           </span>
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-dsr-base leading-tight drop-shadow-2xl max-w-5xl">
+          <h1 className="font-serif text-3xl md:text-5xl lg:text-7xl text-dsr-base leading-tight drop-shadow-2xl max-w-5xl">
             DSR Elite Brundhavanam
           </h1>
 
@@ -54,12 +54,12 @@ export default function HeroVideo() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-4"
+            className="mt-4 w-full md:w-fit"
           >
             <a 
               href="/DSR_Elite_Brundhavanam.pdf"
               download="DSR_Elite_Brundhavanam.pdf"
-              className="group relative inline-flex items-center gap-3 px-8 py-4 bg-dsr-gold text-dsr-dark font-serif text-lg tracking-wide rounded-sm overflow-hidden transition-all duration-300 hover:scale-105 active:scale-100 luxury-shadow"
+              className="group relative inline-flex items-center justify-center gap-3 w-full md:w-fit px-8 py-4 bg-dsr-gold text-dsr-dark font-serif text-lg tracking-wide rounded-sm overflow-hidden transition-all duration-300 hover:scale-105 active:scale-100 luxury-shadow"
             >
               <Download className="w-5 h-5 transition-transform group-hover:-translate-y-1" />
               <span>Download Brochure</span>

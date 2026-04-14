@@ -58,7 +58,7 @@ export default function ChatConcierge() {
   };
 
   return (
-    <div className="fixed bottom-8 right-20 z-100 flex flex-col items-end">
+    <div className="fixed bottom-8 right-20 z-[100] flex flex-col items-end">
 
       <AnimatePresence>
         {isOpen && (

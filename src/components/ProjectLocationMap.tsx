@@ -5,8 +5,8 @@ import { MapPin, Navigation } from "lucide-react";
 
 export default function ProjectLocationMap() {
   return (
-    <section className="bg-dsr-dark relative z-10 overflow-hidden py-12 md:py-24">
-      <div className="max-w-7xl mx-auto px-4 relative z-10 w-full">
+    <section className="py-24 md:py-32 bg-dsr-dark relative z-0 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
 
         {/* Full-width Map Container */}
         <div className="relative w-full h-[600px] bg-[#1a1a1a] rounded-sm border border-white/5 overflow-hidden luxury-shadow group">
@@ -38,7 +38,7 @@ export default function ProjectLocationMap() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="bg-white/10 backdrop-blur-xl border border-white/20 p-8 rounded-sm shadow-2xl flex flex-col items-start"
             >
-              <h3 className="text-2xl font-serif text-dsr-base mb-2">Project Location</h3>
+              <h3 className="text-3xl md:text-5xl lg:text-7xl font-serif text-dsr-base mb-2">Project Location</h3>
               <p className="text-dsr-base/80 font-light leading-relaxed mb-8">
                 Located along NH-44
                 Bengaluru-Hyderabad
