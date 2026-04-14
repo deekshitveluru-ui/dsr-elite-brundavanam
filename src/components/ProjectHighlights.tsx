@@ -27,16 +27,19 @@ const containerVariants: Variants = {
       delayChildren: 0.2
     }
   }
-};
+} as const;
 
 const itemVariants: Variants = {
   hidden: { opacity: 0, y: 15 },
   show: { 
     opacity: 1, 
     y: 0, 
-    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } 
+    transition: { 
+      duration: 0.6, 
+      ease: [0.22, 1, 0.36, 1] 
+    } 
   }
-};
+} as const;
 
 export default function ProjectHighlights() {
   return (
@@ -48,7 +51,7 @@ export default function ProjectHighlights() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="text-4xl md:text-5xl font-serif text-dsr-dark mb-4"
           >
             Engineered for <span className="text-dsr-gold">Excellence</span>
@@ -57,7 +60,7 @@ export default function ProjectHighlights() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
             className="text-gray-600 text-lg max-w-2xl mx-auto font-light"
           >
             A definitive manifestation of uncompromised quality and visionary planning. Discover the foundation of ultra-luxury living.
