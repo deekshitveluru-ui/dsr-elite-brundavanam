@@ -27,7 +27,7 @@ const containerVariants: Variants = {
       delayChildren: 0.2
     }
   }
-} as const;
+};
 
 const itemVariants: Variants = {
   hidden: { opacity: 0, y: 15 },
@@ -39,7 +39,7 @@ const itemVariants: Variants = {
       ease: [0.22, 1, 0.36, 1] 
     } 
   }
-} as const;
+};
 
 export default function ProjectHighlights() {
   return (
