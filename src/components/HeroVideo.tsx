@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import { Download } from "lucide-react";
 
 export default function HeroVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -38,7 +39,7 @@ export default function HeroVideo() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5, ease: "easeOut" }}
+          transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
           className="flex flex-col items-center gap-6"
         >
           <span className="text-dsr-gold uppercase tracking-[0.3em] font-medium text-sm md:text-base">
@@ -47,6 +48,26 @@ export default function HeroVideo() {
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-dsr-base leading-tight drop-shadow-2xl max-w-5xl">
             DSR Elite Brundhavanam
           </h1>
+
+          {/* Download Brochure CTA */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 1, ease: [0.22, 1, 0.36, 1] }}
+            className="mt-4"
+          >
+            <a 
+              href="/DSR_Elite_Brundhavanam.pdf"
+              download="DSR_Elite_Brundhavanam.pdf"
+              className="group relative inline-flex items-center gap-3 px-8 py-4 bg-dsr-gold text-dsr-dark font-serif text-lg tracking-wide rounded-sm overflow-hidden transition-all duration-300 hover:scale-105 active:scale-100 luxury-shadow"
+            >
+              <Download className="w-5 h-5 transition-transform group-hover:-translate-y-1" />
+              <span>Download Brochure</span>
+              
+              {/* Subtle hover overlay */}
+              <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+            </a>
+          </motion.div>
         </motion.div>
       </div>
 
