@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@plugin "tailwind-scrollbar-hide";
+
+@theme {
+  --color-dsr-emerald: #064E3B; /* Keep for legacy reference */
+  --color-dsr-emerald-light: #059669; /* Keep for legacy reference */
+  --color-dsr-base: #F9F9F6;
+  --color-dsr-dark: #0F251A;
+  --color-dsr-gold: #C5A059;
+  --color-dsr-white: #FFFFFF;
+  --color-dsr-stone: #F5F5F4;
+  --color-dsr-charcoal: #1C1917;
+  
+  --font-sans: var(--font-inter), Arial, sans-serif;
+  --font-serif: var(--font-playfair), Georgia, serif;
+}
+
+@layer utilities {
+  .luxury-shadow {
+    @apply shadow-[0_10px_40px_-10px_rgba(0,0,0,0.08)];
+  }
+}
+
+:root {
+  --background: var(--color-dsr-base);
+  --foreground: #111827;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
