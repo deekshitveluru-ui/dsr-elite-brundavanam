@@ -12,7 +12,7 @@ type Message = {
 export default function ChatConcierge() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
-    { role: "assistant", content: "Welcome to DSR Elite Brundavanam. I am your digital concierge. How may I assist you with your investment journey today?" }
+    { role: "assistant", content: "Welcome to Sreekaram Infra Brundavanam. I am your digital concierge. How may I assist you with your investment journey today?" }
   ]);
   const [inputValue, setInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);

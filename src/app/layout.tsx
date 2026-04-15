@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "DSR Elite Brundavanam | Ultra-Luxury Real Estate",
+  title: "Sreekaram Infra Brundavanam | Ultra-Luxury Real Estate",
   description: "A premium, ultra-luxury residential and resort township located in Anantapur (NH-44).",
 };
 
