@@ -46,7 +46,7 @@ export default function HeroVideo() {
             Stillness. Freedom. Connection.
           </span>
           <h1 className="font-serif text-3xl md:text-5xl lg:text-7xl text-dsr-base leading-tight drop-shadow-2xl max-w-5xl">
-            DSR Elite Brundhavanam
+            Sreekaram Infra<br></> Brundhavanam
           </h1>
 
           {/* Download Brochure CTA */}
@@ -56,14 +56,14 @@ export default function HeroVideo() {
             transition={{ duration: 1, delay: 1, ease: [0.22, 1, 0.36, 1] }}
             className="mt-4 w-full md:w-fit"
           >
-            <a 
+            <a
               href="/DSR_Elite_Brundhavanam.pdf"
               download="DSR_Elite_Brundhavanam.pdf"
               className="group relative inline-flex items-center justify-center gap-3 w-full md:w-fit px-8 py-4 bg-dsr-gold text-dsr-dark font-serif text-lg tracking-wide rounded-sm overflow-hidden transition-all duration-300 hover:scale-105 active:scale-100 luxury-shadow"
             >
               <Download className="w-5 h-5 transition-transform group-hover:-translate-y-1" />
               <span>Download Brochure</span>
-              
+
               {/* Subtle hover overlay */}
               <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity" />
             </a>
