@@ -5,18 +5,18 @@ import { Send, MapPin, Phone, Mail } from "lucide-react";
 
 export default function ContactSection() {
   const contactDetails = [
-    { icon: MapPin, text: "DSR Elite Infra Projects, #1-1347, Sri Nagar Colony, Ananthapuramu-515001." },
+    { icon: MapPin, text: "Sreekaram Infra Projects, #1-1347, Sri Nagar Colony, Ananthapuramu-515001." },
     { icon: Phone, text: "+91 9112230234 / +91 9182501331" },
-    { icon: Mail, text: "info.dsrelite@gmail.com" },
+    { icon: Mail, text: "info.sreekaraminfra@gmail.com" },
   ];
 
   return (
     <section className="py-24 bg-dsr-dark relative border-t border-dsr-dark">
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row gap-16">
-          
+
           {/* Left Column: Form */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -29,36 +29,36 @@ export default function ContactSection() {
 
               <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
                 <div>
-                  <input 
-                    type="text" 
-                    placeholder="Full Name" 
+                  <input
+                    type="text"
+                    placeholder="Full Name"
                     className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-dsr-dark placeholder-gray-400 focus:outline-none focus:border-dsr-gold focus:bg-white transition-colors"
                   />
                 </div>
                 <div>
-                  <input 
-                    type="tel" 
-                    placeholder="Phone Number" 
+                  <input
+                    type="tel"
+                    placeholder="Phone Number"
                     className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-dsr-dark placeholder-gray-400 focus:outline-none focus:border-dsr-gold focus:bg-white transition-colors"
                   />
                 </div>
                 <div>
-                  <input 
-                    type="email" 
-                    placeholder="Email Address" 
+                  <input
+                    type="email"
+                    placeholder="Email Address"
                     className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-dsr-dark placeholder-gray-400 focus:outline-none focus:border-dsr-gold focus:bg-white transition-colors"
                   />
                 </div>
                 <div>
-                  <textarea 
-                    placeholder="Your Message..." 
+                  <textarea
+                    placeholder="Your Message..."
                     rows={4}
                     className="w-full bg-white border border-gray-200 rounded-sm px-4 py-3 text-dsr-dark placeholder-gray-400 focus:outline-none focus:border-dsr-gold focus:bg-white transition-colors resize-none"
                   ></textarea>
                 </div>
-                
-                <button 
-                  type="submit" 
+
+                <button
+                  type="submit"
                   className="w-full bg-dsr-gold py-4 rounded-sm flex items-center justify-center gap-2 text-white hover:bg-[#b08d4b] transition-all duration-300 font-bold uppercase tracking-wider text-sm group"
                 >
                   <span>Submit Inquiry</span>
@@ -70,7 +70,7 @@ export default function ContactSection() {
 
           {/* Right Column: Contact Details */}
           <div className="w-full lg:w-1/2 flex flex-col justify-center">
-            <motion.h2 
+            <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -83,7 +83,7 @@ export default function ContactSection() {
               {contactDetails.map((detail, index) => {
                 const Icon = detail.icon;
                 return (
-                  <motion.div 
+                  <motion.div
                     key={index}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
