@@ -25,7 +25,7 @@ export default function ProjectLocationMap() {
               </div>
             </div>
             <div className="mt-4 px-4 py-2 bg-dsr-dark/80 backdrop-blur-md border border-dsr-gold/30 rounded-sm">
-              <span className="text-dsr-gold text-sm tracking-widest uppercase font-bold">DSR Elite Brundavanam</span>
+              <span className="text-dsr-gold text-sm tracking-widest uppercase font-bold">Sreekaram Infra Brundavanam</span>
             </div>
           </div>
 

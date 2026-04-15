@@ -46,7 +46,7 @@ export default function HeroVideo() {
             Stillness. Freedom. Connection.
           </span>
           <h1 className="font-serif text-3xl md:text-5xl lg:text-7xl text-dsr-base leading-tight drop-shadow-2xl max-w-5xl">
-            Sreekaram Infra<br></> Brundhavanam
+            Sreekaram Infra<br />Brundhavanam
           </h1>
 
           {/* Download Brochure CTA */}

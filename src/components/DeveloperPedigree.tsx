@@ -7,7 +7,7 @@ export default function DeveloperPedigree() {
   return (
     <section className="py-20 bg-dsr-base border-t border-gray-200">
       <div className="max-w-4xl mx-auto px-6 text-center">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -18,7 +18,7 @@ export default function DeveloperPedigree() {
             <Building2 className="w-8 h-8 text-dsr-dark" />
           </div>
           <h2 className="text-3xl md:text-4xl font-serif text-dsr-dark mb-6">
-            Developed by DSR Elite Infra Projects
+            Developed by Sreekaram Infra Projects
           </h2>
           <p className="text-gray-600 text-lg font-light leading-relaxed mb-8">
             Committed to engineering excellence and sustainable luxury. Every square foot of Brundavanam is deeply rooted in 100% Vaastu-compliant architecture, designed exclusively to elevate the modern lifestyle for discerning families.
