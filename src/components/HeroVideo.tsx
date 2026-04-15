@@ -58,7 +58,7 @@ export default function HeroVideo() {
           >
             <a
               href="/DSR_Elite_Brundhavanam.pdf"
-              download="Sreekaram-Infra-Brundhavanam"
+              download="Sreekaram-Infra-Brundhavanam.pdf"
               className="group relative inline-flex items-center justify-center gap-3 w-full md:w-fit px-8 py-4 bg-dsr-gold text-dsr-dark font-serif text-lg tracking-wide rounded-sm overflow-hidden transition-all duration-300 hover:scale-105 active:scale-100 luxury-shadow"
             >
               <Download className="w-5 h-5 transition-transform group-hover:-translate-y-1" />
