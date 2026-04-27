@@ -63,8 +63,8 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 1.5 }}
         >
           <motion.a
-            href="/DSR_Elite_Brundhavanam.pdf"
-            download="DSR_Elite_Brundhavanam.pdf"
+            href="/Sreekaram_Brundhavanam.pdf"
+            download="Sreekaram_Brundhavanam.pdf"
             whileHover={{ scale: 1.05, boxShadow: "0px 0px 20px rgba(197, 160, 89, 0.6)" }}
             transition={{ duration: 0.4, ease: "easeOut" }}
             className="inline-flex items-center gap-3 bg-dsr-gold text-dsr-dark border border-transparent px-8 py-4 rounded-sm font-medium hover:bg-[#b08d4b] hover:text-white luxury-shadow"
