@@ -63,7 +63,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 1.5 }}
         >
           <motion.a
-            href="/Sreekaram_Brundhavanam.pdf"
+            href="/DSR_Elite_Brundhavanam.pdf"
             download="Sreekaram_Infra_Brundhavanam.pdf"
             whileHover={{ scale: 1.05, boxShadow: "0px 0px 20px rgba(197, 160, 89, 0.6)" }}
             transition={{ duration: 0.4, ease: "easeOut" }}
