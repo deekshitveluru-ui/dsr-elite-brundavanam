@@ -6,7 +6,7 @@ import { Send, MapPin, Phone, Mail } from "lucide-react";
 export default function ContactSection() {
   const contactDetails = [
     { icon: MapPin, text: "Sreekaram Infra Projects, #1-1347, Sri Nagar Colony, Ananthapuramu-515001." },
-    { icon: Phone, text: "+91 9112230234 / +91 9182501331" },
+    { icon: Phone, text: "+91 9112230234" },
     { icon: Mail, text: "info.sreekaraminfra@gmail.com" },
   ];
 
